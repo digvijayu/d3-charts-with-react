@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import Home from "./pages/Home";
 import BarCharts from "./pages/BarCharts";
+import LineCharts from "./pages/LineCharts";
 import NavigationPanel from "./components/NavigationPanel";
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route path="/bar-charts">
               <BarCharts />
+            </Route>
+            <Route path="/line-charts">
+              <LineCharts />
             </Route>
           </Switch>
         </RightPane>

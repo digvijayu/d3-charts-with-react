@@ -11,6 +11,9 @@ const NavigationPanel = () => {
       <NavigationLinkContainer>
         <NavigationLink to="/bar-charts">bar-charts</NavigationLink>
       </NavigationLinkContainer>
+      <NavigationLinkContainer>
+        <NavigationLink to="/line-charts">line-charts</NavigationLink>
+      </NavigationLinkContainer>
     </NavigationLinkList>
   );
 };
