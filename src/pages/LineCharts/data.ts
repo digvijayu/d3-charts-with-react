@@ -1,52 +1,10 @@
-export const WALK_STAT = [
-  { step: 0, value: 2.172230386244168 },
-  { step: 1, value: 2.483747137750365 },
-  { step: 2, value: 2.144220635605792 },
-  { step: 3, value: 2.104235497921415 },
-  { step: 4, value: 1.8019512418464492 },
-  { step: 5, value: 1.9280766727501297 },
-  { step: 6, value: 2.065913398391543 },
-  { step: 7, value: 2.1646660233326407 },
-  { step: 8, value: 2.3293249194444843 },
-  { step: 9, value: 2.2184995531180123 },
-  { step: 10, value: 2.7057877501178513 },
-  { step: 11, value: 2.746563425345654 },
-  { step: 12, value: 2.484772608501925 },
-  { step: 13, value: 2.8541552789983036 },
-  { step: 14, value: 3.1118551314034057 },
-  { step: 15, value: 2.9180780203296193 },
-  { step: 16, value: 3.2075297783719714 },
-  { step: 17, value: 2.767760305293762 },
-  { step: 18, value: 3.126899801859647 },
-  { step: 19, value: 3.4172094036233736 },
-  { step: 20, value: 3.0002991852523495 },
-  { step: 21, value: 3.295972655425806 },
-  { step: 22, value: 3.1470483080844405 },
-  { step: 23, value: 3.3517442756303817 },
-  { step: 24, value: 3.362097349205939 },
-  { step: 25, value: 3.194403242923591 },
-  { step: 26, value: 3.1241931477378393 },
-  { step: 27, value: 2.7921685611764078 },
-  { step: 28, value: 3.016947617493704 },
-  { step: 29, value: 2.8897937903903728 },
-  { step: 30, value: 2.949838511685374 },
-  { step: 31, value: 3.37238639830258 },
-  { step: 32, value: 3.230783877996817 },
-  { step: 33, value: 2.921118899381926 },
-  { step: 34, value: 3.262601351340371 },
-  { step: 35, value: 2.7802852948907697 },
-  { step: 36, value: 3.1555295007963937 },
-  { step: 37, value: 3.5442954673040754 },
-  { step: 38, value: 3.0566041234040706 },
-  { step: 39, value: 3.357490475234341 },
-  { step: 40, value: 3.4927062908756925 },
-  { step: 41, value: 3.3690663579429607 },
-  { step: 42, value: 3.695074350012966 },
-  { step: 43, value: 4 },
-  { step: 44, value: 4 },
-  { step: 45, value: 3.81788764258885 },
-  { step: 46, value: 4 },
-  { step: 47, value: 4 },
-  { step: 48, value: 4 },
-  { step: 49, value: 3.790489757230333 },
-];
+export const generateWalkData = (
+  count: number
+): { step: number; value: number }[] => {
+  const data = [];
+  for (let index = 0; index < count; index++) {
+    data.push({ step: index, value: Math.random() * 10 });
+  }
+
+  return data;
+};
