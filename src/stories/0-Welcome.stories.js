@@ -1,9 +1,9 @@
 import React from "react";
 
-import LineChart from "src/components/Line";
+import LineChart from "src/components/LineChart";
 import { generateWalkData } from "src/pages/LineCharts/data";
 
-const NO_OF_DATA_POINTS = 5000;
+const NO_OF_DATA_POINTS = 500;
 
 export default {
   title: "Welcome",
